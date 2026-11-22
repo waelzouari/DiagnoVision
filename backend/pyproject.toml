@@ -1,0 +1,15 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+# Keep CI focused on correctness until the compact MVP modules receive a
+# dedicated formatting pass. Pytest and type-aware runtime tests cover the
+# FastAPI dependency-injection patterns that broad B008/F403 rules flag.
+select = ["E9", "F63", "F7", "F82"]
+

@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base; @tailwind components; @tailwind utilities;
+@layer base { *{@apply border-slate-200} html{@apply bg-canvas text-ink antialiased} body{@apply m-0 min-w-[320px] bg-canvas text-base} button,a,input,select,textarea{@apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2} }
+@layer components {
+  .card{@apply rounded-xl border bg-white shadow-card} .btn{@apply inline-flex min-h-10 items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50} .btn-primary{@apply btn bg-brand-700 text-white hover:bg-brand-900} .btn-secondary{@apply btn border bg-white text-slate-700 hover:bg-slate-50} .btn-danger{@apply btn bg-red-600 text-white hover:bg-red-700} .input{@apply min-h-11 w-full rounded-lg border bg-white px-3 text-sm text-slate-900 placeholder:text-slate-400} .label{@apply mb-1.5 block text-sm font-medium text-slate-700} .badge{@apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold} .page-title{@apply text-2xl font-bold tracking-tight text-slate-950} .muted{@apply text-sm text-slate-500}
+}
