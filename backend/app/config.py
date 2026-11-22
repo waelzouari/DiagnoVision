@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     jwt_secret: str = "development-only-change-me-32-characters"
     access_minutes: int = 15
     refresh_days: int = 7
-    allowed_origins: str = "http://localhost:5173,http://localhost:8080"
+    allowed_origins: str = "http://localhost:3000,http://localhost:8080"
     secure_cookies: bool = False
     demo_mode: bool = True
     max_upload_bytes: int = 20 * 1024 * 1024
